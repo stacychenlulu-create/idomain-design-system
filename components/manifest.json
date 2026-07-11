@@ -1,0 +1,73 @@
+{
+  "$description": "Component manifest for the IDOMAIN 壹東實業 design system. All components consume CSS custom properties from /tokens/colors_and_type.css.",
+  "framework": "react",
+  "tokensCss": "/tokens/colors_and_type.css",
+  "components": [
+    {
+      "name": "Website UI Kit",
+      "path": "/components/website/",
+      "entry": "index.html",
+      "files": ["components.jsx", "sections.jsx", "app.jsx", "styles.css"],
+      "description": "Full bilingual corporate marketing site (React 18): nav, hero, stats, product cards, process timeline, project grid, contact, footer. The reference implementation of the brand on the web."
+    },
+    {
+      "name": "Stationery Kit",
+      "path": "/components/stationery/",
+      "entry": "index.html",
+      "description": "Business card + letterhead layouts using the standard logo lockups."
+    },
+    {
+      "name": "Buttons",
+      "path": "/components/specimens/buttons.html",
+      "description": "Primary (brand blue), secondary (outline), ghost, copper accent, and text-link buttons in two sizes."
+    },
+    {
+      "name": "Badges",
+      "path": "/components/specimens/badges.html",
+      "description": "Status and category badges — flat fills, square-leaning radii."
+    },
+    {
+      "name": "Card",
+      "path": "/components/specimens/card.html",
+      "description": "White card, 1px #e3e4e6 border, 4–8px radius, optional eyebrow topline. No gradient fills, no colored left-border cards."
+    },
+    {
+      "name": "Form inputs",
+      "path": "/components/specimens/form-inputs.html",
+      "description": "Text inputs and selects with brand-blue focus ring (2px, 2px offset)."
+    },
+    {
+      "name": "Elevation",
+      "path": "/components/specimens/elevation.html",
+      "description": "Shadow scale specimen — soft, low, cool-tinted."
+    },
+    {
+      "name": "Radii",
+      "path": "/components/specimens/radii.html",
+      "description": "Corner radius scale — architectural, 0–8px."
+    },
+    {
+      "name": "Color specimens",
+      "path": "/components/specimens/",
+      "files": ["colors-primary.html", "colors-accent.html", "colors-neutrals.html", "colors-50th.html", "gradients-50th.html"],
+      "description": "Primary blues, copper accent, neutral grays, and the restricted 50th-anniversary palette."
+    },
+    {
+      "name": "Type specimens",
+      "path": "/components/specimens/",
+      "files": ["type-display.html", "type-body.html", "type-scale.html", "type-weights.html"],
+      "description": "Serif display over sans body — the brand's typographic signature."
+    },
+    {
+      "name": "Logo specimens",
+      "path": "/components/specimens/",
+      "files": ["logo-mark.html", "logo-lockups.html", "logo-50th.html"],
+      "description": "Brush-stroke mark, horizontal/lockup variants, and 50th-anniversary marks (anniversary use only)."
+    },
+    {
+      "name": "Spacing scale",
+      "path": "/components/specimens/spacing-scale.html",
+      "description": "8px base grid: 4–128px."
+    }
+  ]
+}

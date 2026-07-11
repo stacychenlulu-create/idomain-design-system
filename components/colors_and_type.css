@@ -1,0 +1,3 @@
+/* Components shim — re-exports the single source of truth in /tokens
+   so specimen files can @import url('../colors_and_type.css'). */
+@import url('../tokens/colors_and_type.css');
