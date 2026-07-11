@@ -1,0 +1,8 @@
+/* ============================================================
+   壹東實業 · I DOMAIN INDUSTRIAL — Design System
+   styles.css — canonical entry point.
+   Consumers should link THIS file; it pulls in all design tokens
+   (color, type, spacing, radii, elevation) plus the brand webfont
+   imports from colors_and_type.css.
+   ============================================================ */
+@import url('colors_and_type.css');

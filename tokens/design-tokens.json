@@ -1,0 +1,140 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "IDOMAIN 壹東實業 design tokens. Source of truth: 企業視覺標準規範 v1.0 (2021.07.15, MSD). Mirrors tokens/colors_and_type.css — if the two ever disagree, the CSS wins and this file must be regenerated.",
+  "color": {
+    "brand": {
+      "blue-digital": { "$value": "#1d3eb1", "$type": "color", "$description": "數位標準藍 — primary for all screens/decks" },
+      "blue-print": { "$value": "#324a9a", "$type": "color", "$description": "印刷標準藍 CMYK 92/82/2/0 — print only" },
+      "blue-light": { "$value": "#418af2", "$type": "color", "$description": "亮藍 — active states, data emphasis, sparing" },
+      "copper": { "$value": "#d68549", "$type": "color", "$description": "銅 — the ONLY warm accent, use minimally" }
+    },
+    "neutral": {
+      "ink": { "$value": "#2d2d2d", "$type": "color", "$description": "primary text / near-black" },
+      "graphite": { "$value": "#414042", "$type": "color", "$description": "secondary text" },
+      "gray": { "$value": "#cacac9", "$type": "color", "$description": "1px rules / dividers" },
+      "gray-light": { "$value": "#d1d3d4", "$type": "color" },
+      "paper": { "$value": "#efefef", "$type": "color", "$description": "off-white surface" },
+      "white": { "$value": "#ffffff", "$type": "color" }
+    },
+    "blue-scale": {
+      "900": { "$value": "#0f2467", "$type": "color" },
+      "700": { "$value": "#16308c", "$type": "color", "$description": "hover / brand-strong" },
+      "600": { "$value": "#1d3eb1", "$type": "color", "$description": "= digital primary" },
+      "500": { "$value": "#2a4fc6", "$type": "color" },
+      "300": { "$value": "#7ea2ee", "$type": "color" },
+      "100": { "$value": "#dbe4f8", "$type": "color" },
+      "50": { "$value": "#eef2fc", "$type": "color", "$description": "soft tint background" }
+    },
+    "anniversary-50th": {
+      "$description": "1975–2025 commemorative palette. ONLY for 50th-anniversary collateral, never everyday material.",
+      "blue": { "$value": "#324a90", "$type": "color" },
+      "blue-deep": { "$value": "#2b3d7e", "$type": "color" },
+      "gold": { "$value": "#c8a368", "$type": "color", "$description": "champagne gold (primary gold)" },
+      "gold-light": { "$value": "#e2bf8c", "$type": "color" },
+      "gold-dark": { "$value": "#b88a4e", "$type": "color" },
+      "gold-gradient": { "$value": "linear-gradient(135deg, #e6c896 0%, #cba978 38%, #b88a4e 100%)", "$type": "gradient" },
+      "blue-gradient": { "$value": "linear-gradient(140deg, #4a63a8 0%, #324a90 55%, #2b3d7e 100%)", "$type": "gradient" }
+    },
+    "semantic": {
+      "bg": { "$value": "{color.neutral.white}", "$type": "color" },
+      "bg-subtle": { "$value": "{color.neutral.paper}", "$type": "color" },
+      "bg-inverse": { "$value": "{color.neutral.ink}", "$type": "color" },
+      "surface": { "$value": "{color.neutral.white}", "$type": "color" },
+      "surface-alt": { "$value": "#f6f7f9", "$type": "color" },
+      "fg1": { "$value": "{color.neutral.ink}", "$type": "color" },
+      "fg2": { "$value": "{color.neutral.graphite}", "$type": "color" },
+      "fg3": { "$value": "#6b6c6f", "$type": "color" },
+      "brand": { "$value": "{color.brand.blue-digital}", "$type": "color" },
+      "brand-strong": { "$value": "{color.blue-scale.700}", "$type": "color" },
+      "brand-soft": { "$value": "{color.blue-scale.50}", "$type": "color" },
+      "accent": { "$value": "{color.brand.copper}", "$type": "color" },
+      "border": { "$value": "#e3e4e6", "$type": "color" },
+      "border-strong": { "$value": "{color.neutral.gray}", "$type": "color" },
+      "divider": { "$value": "#ececec", "$type": "color" },
+      "link": { "$value": "{color.brand.blue-digital}", "$type": "color" },
+      "link-hover": { "$value": "{color.blue-scale.700}", "$type": "color" },
+      "success": { "$value": "#1f8a5b", "$type": "color" },
+      "warning": { "$value": "{color.brand.copper}", "$type": "color" },
+      "danger": { "$value": "#c0392b", "$type": "color" }
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "serif": { "$value": ["Noto Serif TC", "Source Han Serif TC", "思源宋體", "Songti TC", "serif"], "$type": "fontFamily", "$description": "headings/display — 思源宋體" },
+      "sans": { "$value": ["Noto Sans TC", "Source Han Sans TC", "思源黑體", "PingFang TC", "sans-serif"], "$type": "fontFamily", "$description": "body — 思源黑體" },
+      "latin": { "$value": ["Helvetica Neue", "Helvetica", "Arial", "sans-serif"], "$type": "fontFamily", "$description": "Latin secondary / tagline" },
+      "mono": { "$value": ["SF Mono", "ui-monospace", "Menlo", "Consolas", "monospace"], "$type": "fontFamily" }
+    },
+    "roles": {
+      "display": { "$value": "{typography.fontFamily.serif}", "$type": "fontFamily" },
+      "heading": { "$value": "{typography.fontFamily.serif}", "$type": "fontFamily", "$description": "Noto Serif TC Semibold, ≥15pt" },
+      "body": { "$value": "{typography.fontFamily.sans}", "$type": "fontFamily", "$description": "Noto Sans TC Regular" }
+    },
+    "fontSize": {
+      "xs": { "$value": "12px", "$type": "dimension" },
+      "sm": { "$value": "14px", "$type": "dimension" },
+      "base": { "$value": "16px", "$type": "dimension" },
+      "md": { "$value": "18px", "$type": "dimension" },
+      "lg": { "$value": "22px", "$type": "dimension" },
+      "xl": { "$value": "28px", "$type": "dimension" },
+      "2xl": { "$value": "36px", "$type": "dimension" },
+      "3xl": { "$value": "48px", "$type": "dimension" },
+      "4xl": { "$value": "64px", "$type": "dimension" },
+      "5xl": { "$value": "84px", "$type": "dimension" }
+    },
+    "lineHeight": {
+      "tight": { "$value": 1.15, "$type": "number" },
+      "snug": { "$value": 1.3, "$type": "number" },
+      "normal": { "$value": 1.6, "$type": "number" },
+      "loose": { "$value": 1.8, "$type": "number", "$description": "CJK body comfort" }
+    },
+    "letterSpacing": {
+      "tight": { "$value": "-0.02em", "$type": "dimension" },
+      "normal": { "$value": "0", "$type": "dimension" },
+      "wide": { "$value": "0.08em", "$type": "dimension" },
+      "caps": { "$value": "0.18em", "$type": "dimension", "$description": "I DOMAIN INDUSTRIAL tagline spacing" }
+    },
+    "fontWeight": {
+      "light": { "$value": 300, "$type": "fontWeight" },
+      "regular": { "$value": 400, "$type": "fontWeight" },
+      "medium": { "$value": 500, "$type": "fontWeight" },
+      "semibold": { "$value": 600, "$type": "fontWeight" },
+      "bold": { "$value": 700, "$type": "fontWeight" },
+      "black": { "$value": 900, "$type": "fontWeight" }
+    }
+  },
+  "spacing": {
+    "$description": "8px base grid",
+    "1": { "$value": "4px", "$type": "dimension" },
+    "2": { "$value": "8px", "$type": "dimension" },
+    "3": { "$value": "12px", "$type": "dimension" },
+    "4": { "$value": "16px", "$type": "dimension" },
+    "5": { "$value": "24px", "$type": "dimension" },
+    "6": { "$value": "32px", "$type": "dimension" },
+    "7": { "$value": "48px", "$type": "dimension" },
+    "8": { "$value": "64px", "$type": "dimension" },
+    "9": { "$value": "96px", "$type": "dimension" },
+    "10": { "$value": "128px", "$type": "dimension" }
+  },
+  "radius": {
+    "$description": "restrained, architectural (square-leaning); max 8px",
+    "none": { "$value": "0", "$type": "dimension" },
+    "sm": { "$value": "2px", "$type": "dimension" },
+    "md": { "$value": "4px", "$type": "dimension" },
+    "lg": { "$value": "8px", "$type": "dimension" },
+    "pill": { "$value": "999px", "$type": "dimension" }
+  },
+  "shadow": {
+    "$description": "soft, low, cool-tinted; never heavy drop shadows or glows",
+    "xs": { "$value": "0 1px 2px rgba(29,62,177,0.06)", "$type": "shadow" },
+    "sm": { "$value": "0 1px 3px rgba(20,30,60,0.08), 0 1px 2px rgba(20,30,60,0.04)", "$type": "shadow" },
+    "md": { "$value": "0 4px 14px rgba(20,30,60,0.08)", "$type": "shadow" },
+    "lg": { "$value": "0 12px 32px rgba(20,30,60,0.12)", "$type": "shadow" },
+    "blue": { "$value": "0 8px 24px rgba(29,62,177,0.20)", "$type": "shadow" }
+  },
+  "layout": {
+    "container": { "$value": "1200px", "$type": "dimension" },
+    "container-wide": { "$value": "1440px", "$type": "dimension" },
+    "gutter": { "$value": "24px", "$type": "dimension" }
+  }
+}
