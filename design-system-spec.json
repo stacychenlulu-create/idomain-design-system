@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0",
+  "systemName": "IDOMAIN 壹東實業 Design System",
+  "repositoryUrl": "https://github.com/stacychenlulu-create/idomain-design-system",
+  "paths": {
+    "tokens": "/tokens/design-tokens.json",
+    "components": "/components/",
+    "assets": "/assets/logos/"
+  },
+  "componentManifest": "/components/manifest.json",
+  "framework": "react"
+}
