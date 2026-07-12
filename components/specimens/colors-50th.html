@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="_card.css">
+<style>
+  .swatches { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; border: 1px solid var(--border); border-radius: var(--radius-md); overflow: hidden; }
+  .sw { height: 120px; padding: 11px 13px; display: flex; flex-direction: column; justify-content: flex-end; }
+  .sw .name { font-family: var(--font-latin); font-size: 11px; font-weight: 600; }
+  .sw .hex { font-family: var(--font-mono); font-size: 11px; opacity: .85; }
+  .sw .role { font-family: var(--font-latin); font-size: 9px; letter-spacing: .12em; text-transform: uppercase; opacity: .75; margin-bottom: auto; }
+  .light { color: #fff; }
+  .dark { color: #3a2f1c; }
+</style></head>
+<body><div class="card">
+  <div class="swatches">
+    <div class="sw light" style="background:#324a90"><span class="role">50th</span><span class="name">Anniv Blue</span><span class="hex">#324a90</span></div>
+    <div class="sw light" style="background:#2b3d7e"><span class="role">Deep</span><span class="name">Blue Deep</span><span class="hex">#2b3d7e</span></div>
+    <div class="sw dark" style="background:#e2bf8c"><span class="role">Gold</span><span class="name">Gold Light</span><span class="hex">#e2bf8c</span></div>
+    <div class="sw dark" style="background:#c8a368"><span class="role">Primary</span><span class="name">Gold</span><span class="hex">#c8a368</span></div>
+    <div class="sw light" style="background:#b88a4e"><span class="role">Deep</span><span class="name">Gold Dark</span><span class="hex">#b88a4e</span></div>
+  </div>
+</div></body></html>

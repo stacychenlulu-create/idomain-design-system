@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Components" name="Badges" subtitle="Solid, soft, copper, status" viewport="700x110" -->
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<link rel="stylesheet" href="_card.css">
+<style>
+  .card { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+  .badge { font-family: var(--font-latin); font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; padding: 5px 11px; border-radius: var(--radius-pill); }
+  .b-blue { background: var(--brand-soft); color: var(--brand-strong); }
+  .b-solid { background: var(--brand); color: #fff; }
+  .b-copper { background: #fbeee2; color: #a85b27; }
+  .b-gray { background: #eceef0; color: var(--fg2); }
+  .b-line { background: #fff; color: var(--fg1); box-shadow: inset 0 0 0 1px var(--border-strong); }
+  .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--success); display: inline-block; margin-right: 6px; vertical-align: middle; }
+  .b-status { font-family: var(--font-sans); font-size: 12px; color: var(--fg2); text-transform: none; letter-spacing: 0; background:#fff; box-shadow: inset 0 0 0 1px var(--border); }
+</style></head>
+<body><div class="card">
+  <span class="badge b-solid">帷幕牆</span>
+  <span class="badge b-blue">Curtain Wall</span>
+  <span class="badge b-copper">New Finish</span>
+  <span class="badge b-gray">Archived</span>
+  <span class="badge b-line">Spec v1.0</span>
+  <span class="badge b-status"><span class="dot"></span>In production</span>
+</div></body></html>

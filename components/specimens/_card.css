@@ -1,0 +1,20 @@
+/* Shared styles for preview specimen cards (Design System tab) */
+@import url('../colors_and_type.css');
+
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  font-family: var(--font-body);
+  color: var(--fg1);
+  background: var(--idi-white);
+  -webkit-font-smoothing: antialiased;
+}
+.card {
+  padding: 22px 26px;
+  background: var(--idi-white);
+}
+.card.dark { background: var(--idi-ink); color: var(--fg-inverse); }
+.row { display: flex; align-items: center; gap: 12px; }
+.wrap { display: flex; flex-wrap: wrap; gap: 12px; }
+.mono { font-family: var(--font-mono); }
+.lbl { font-family: var(--font-latin); font-size: 11px; letter-spacing: .04em; color: var(--fg3); text-transform: uppercase; }

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Colors" name="Neutrals" subtitle="Ink, graphite, grays, paper, white" viewport="700x156" -->
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="_card.css">
+<style>
+  .swatches { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0; border: 1px solid var(--border); border-radius: var(--radius-md); overflow: hidden; }
+  .sw { height: 120px; padding: 10px 12px; display: flex; flex-direction: column; justify-content: flex-end; }
+  .sw .name { font-family: var(--font-latin); font-size: 11px; font-weight: 600; }
+  .sw .hex { font-family: var(--font-mono); font-size: 11px; opacity: .85; }
+  .light { color: #fff; }
+  .dark { color: var(--idi-ink); }
+  .bord { box-shadow: inset 0 0 0 1px var(--border); }
+</style></head>
+<body><div class="card">
+  <div class="swatches">
+    <div class="sw light" style="background:#2d2d2d"><span class="name">Ink</span><span class="hex">#2d2d2d</span></div>
+    <div class="sw light" style="background:#414042"><span class="name">Graphite</span><span class="hex">#414042</span></div>
+    <div class="sw dark" style="background:#cacac9"><span class="name">Gray</span><span class="hex">#cacac9</span></div>
+    <div class="sw dark" style="background:#d1d3d4"><span class="name">Gray Light</span><span class="hex">#d1d3d4</span></div>
+    <div class="sw dark" style="background:#efefef"><span class="name">Paper</span><span class="hex">#efefef</span></div>
+    <div class="sw dark bord" style="background:#ffffff"><span class="name">White</span><span class="hex">#ffffff</span></div>
+  </div>
+</div></body></html>

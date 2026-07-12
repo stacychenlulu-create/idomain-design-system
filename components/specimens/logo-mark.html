@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Brand" name="Logo Mark" subtitle="Brushstroke mark on brand backgrounds" viewport="700x152" -->
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="_card.css">
+<style>
+  .card { display: flex; gap: 0; padding: 0; border: 1px solid var(--border); border-radius: var(--radius-md); overflow: hidden; }
+  .cell { flex: 1; display: flex; align-items: center; justify-content: center; height: 150px; border-right: 1px solid var(--border); }
+  .cell:last-child { border-right: 0; }
+  .cell img { height: 78px; }
+  .c-white { background: #fff; }
+  .c-paper { background: var(--idi-paper); }
+  .c-blue { background: var(--idi-blue-digital); }
+  .c-ink { background: var(--idi-ink); }
+  .c-copper { background: var(--idi-copper); }
+</style></head>
+<body><div class="card">
+  <div class="cell c-white"><img src="../assets/logo-mark.svg" alt="mark"></div>
+  <div class="cell c-paper"><img src="../assets/logo-mark-dark.svg" alt="mark ink"></div>
+  <div class="cell c-blue"><img src="../assets/logo-mark-white.svg" alt="mark white"></div>
+  <div class="cell c-ink"><img src="../assets/logo-mark-white.svg" alt="mark white"></div>
+  <div class="cell c-copper"><img src="../assets/logo-mark-white.svg" alt="mark white"></div>
+</div></body></html>

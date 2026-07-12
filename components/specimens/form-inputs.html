@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Components" name="Form Inputs" subtitle="Fields, select, focus state" viewport="700x160" -->
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<link rel="stylesheet" href="_card.css">
+<style>
+  .card { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 20px; }
+  .f { display: flex; flex-direction: column; gap: 6px; }
+  label { font-family: var(--font-sans); font-size: 12px; color: var(--fg2); font-weight: 500; }
+  input, select { font-family: var(--font-sans); font-size: 14px; padding: 10px 12px; border: 1px solid var(--border-strong); border-radius: var(--radius-md); background: #fff; color: var(--fg1); outline: none; }
+  input:focus { border-color: var(--brand); box-shadow: 0 0 0 3px var(--brand-soft); }
+  input.filled { border-color: var(--brand); }
+  .hint { font-family: var(--font-latin); font-size: 11px; color: var(--fg3); }
+</style></head>
+<body><div class="card">
+  <div class="f"><label>公司名稱 · Company</label><input placeholder="輸入公司名稱"></div>
+  <div class="f"><label>聯絡信箱 · Email</label><input class="filled" value="name@idomain.com.tw"></div>
+  <div class="f"><label>專案類型 · Project</label><select><option>金屬帷幕牆</option><option>複層三明治金屬板</option></select></div>
+  <div class="f"><label>聚焦狀態 · Focused</label><input style="border-color:var(--brand);box-shadow:0 0 0 3px var(--brand-soft)" value="精密尺寸"></div>
+</div></body></html>

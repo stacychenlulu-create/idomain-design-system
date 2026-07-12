@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- @dsCard group="Components" name="Buttons" subtitle="Primary, secondary, ghost, copper, link" viewport="700x150" -->
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<link rel="stylesheet" href="_card.css">
+<style>
+  .card { display: flex; flex-direction: column; gap: 16px; }
+  .grp { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .btn { font-family: var(--font-sans); font-size: 14px; font-weight: 500; padding: 11px 22px; border-radius: var(--radius-md); border: 1px solid transparent; cursor: pointer; letter-spacing: .02em; transition: background .12s, color .12s; }
+  .primary { background: var(--brand); color: #fff; }
+  .primary:hover { background: var(--brand-strong); }
+  .secondary { background: #fff; color: var(--brand); border-color: var(--brand); }
+  .ghost { background: transparent; color: var(--fg1); border-color: var(--border-strong); }
+  .copper { background: var(--accent); color: #fff; }
+  .link { background: none; border: 0; color: var(--link); padding: 11px 4px; text-decoration: underline; text-underline-offset: 3px; }
+  .sm { padding: 7px 14px; font-size: 13px; }
+</style></head>
+<body><div class="card">
+  <div class="grp">
+    <button class="btn primary">索取規格</button>
+    <button class="btn secondary">了解更多</button>
+    <button class="btn ghost">下載型錄</button>
+    <button class="btn copper">聯絡我們</button>
+    <button class="btn link">View specs →</button>
+  </div>
+  <div class="grp">
+    <button class="btn primary sm">Primary</button>
+    <button class="btn secondary sm">Secondary</button>
+    <button class="btn ghost sm">Ghost</button>
+  </div>
+</div></body></html>
