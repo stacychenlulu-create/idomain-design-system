@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- @dsCard group="UI Kit — Stationery" name="Stationery — Cards & Letterhead" subtitle="Business card (front/back) + A4 letterhead" viewport="1080x620" -->
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>壹東實業 — Stationery</title>
+<link rel="stylesheet" href="colors_and_type.css" />
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: var(--font-sans); background: #c9cbcf; color: var(--fg1);
+    -webkit-font-smoothing: antialiased; padding: 56px 32px 80px; }
+  .studio { max-width: 1080px; margin: 0 auto; display: flex; flex-direction: column; gap: 64px; }
+  .group { }
+  .group > .label { font-family: var(--font-latin); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: #6c6e72; margin-bottom: 18px; }
+
+  /* ---- Business cards ---- */
+  .cards { display: flex; gap: 36px; flex-wrap: wrap; }
+  .bc { width: 384px; height: 230px; border-radius: 6px; box-shadow: 0 10px 30px rgba(20,30,60,.22); overflow: hidden; position: relative; }
+  /* front */
+  .bc-front { background: #fff; padding: 26px 28px; display: flex; flex-direction: column; justify-content: space-between; }
+  .bc-front .top { display: flex; justify-content: space-between; align-items: flex-start; }
+  .bc-front .logo { height: 34px; }
+  .bc-front .rule { width: 26px; height: 3px; background: var(--accent); margin-top: 6px; }
+  .bc-front .name-row { display: flex; align-items: baseline; gap: 10px; }
+  .bc-front .name { font-family: var(--font-serif); font-weight: 600; font-size: 21px; color: var(--fg1); }
+  .bc-front .title { font-family: var(--font-sans); font-size: 12px; color: var(--brand); }
+  .bc-front .details { margin-top: 12px; display: grid; grid-template-columns: auto 1fr; gap: 4px 10px; }
+  .bc-front .details .k { font-family: var(--font-latin); font-size: 9px; letter-spacing: .12em; text-transform: uppercase; color: var(--fg3); align-self: center; }
+  .bc-front .details .v { font-family: var(--font-sans); font-size: 11.5px; color: var(--fg2); }
+  /* back */
+  .bc-back { background: var(--idi-blue-digital); display: flex; align-items: center; justify-content: center; }
+  .bc-back::before { content: ""; position: absolute; inset: 0; opacity: .5;
+    background-image: linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+    background-size: 32px 32px; }
+  .bc-back .mark { height: 78px; position: relative; }
+  .bc-back .en { position: absolute; bottom: 20px; left: 0; right: 0; text-align: center;
+    font-family: var(--font-latin); font-size: 9px; letter-spacing: .28em; color: rgba(255,255,255,.62); }
+
+  /* ---- Letterhead ---- */
+  .letter { width: 500px; height: 707px; background: #fff; border-radius: 3px;
+    box-shadow: 0 14px 40px rgba(20,30,60,.22); padding: 46px 48px; display: flex; flex-direction: column; }
+  .letter .lh-head { display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: 22px; border-bottom: 1px solid var(--border); }
+  .letter .lh-head .logo { height: 40px; }
+  .letter .lh-head .corp { text-align: right; font-family: var(--font-sans); font-size: 9.5px; line-height: 1.7; color: var(--fg3); }
+  .letter .lh-body { padding-top: 30px; flex: 1; }
+  .letter .lh-date { font-family: var(--font-latin); font-size: 10px; color: var(--fg3); letter-spacing: .04em; }
+  .letter .lh-title { font-family: var(--font-serif); font-weight: 600; font-size: 17px; color: var(--fg1); margin: 22px 0 16px; }
+  .letter .lh-p { font-family: var(--font-sans); font-size: 11px; line-height: 1.95; color: var(--fg2); margin: 0 0 12px; }
+  .letter .lh-line { height: 9px; border-radius: 2px; background: var(--surface-alt); margin: 7px 0; }
+  .letter .lh-line.s { width: 62%; }
+  .letter .lh-foot { margin-top: auto; padding-top: 18px; border-top: 2px solid var(--idi-blue-digital);
+    display: flex; justify-content: space-between; align-items: center; }
+  .letter .lh-foot .web { font-family: var(--font-latin); font-size: 10px; letter-spacing: .14em; color: var(--brand); font-weight: 600; }
+  .letter .lh-foot .meta { font-family: var(--font-sans); font-size: 9px; color: var(--fg3); text-align: right; line-height: 1.6; }
+
+  .pair { display: flex; gap: 48px; flex-wrap: wrap; align-items: flex-start; }
+  .spec { max-width: 300px; }
+  .spec h3 { font-family: var(--font-serif); font-weight: 600; font-size: 18px; margin: 0 0 12px; }
+  .spec p { font-family: var(--font-sans); font-size: 13px; line-height: 1.8; color: var(--fg2); margin: 0 0 14px; }
+  .spec dl { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; margin: 0; }
+  .spec dt { font-family: var(--font-latin); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--fg3); }
+  .spec dd { font-family: var(--font-sans); font-size: 12px; color: var(--fg1); margin: 0; }
+</style>
+</head>
+<body>
+  <div class="studio">
+
+    <div class="group">
+      <div class="label">名片 · Business Card — 90 × 54 mm</div>
+      <div class="cards">
+        <div class="bc bc-front">
+          <div class="top">
+            <div>
+              <img class="logo" src="assets/logo-horizontal.svg" alt="壹東實業" />
+              <div class="rule"></div>
+            </div>
+          </div>
+          <div>
+            <div class="name-row">
+              <span class="name">陳　怡安</span>
+              <span class="title">專案經理 · Project Manager</span>
+            </div>
+            <div class="details">
+              <span class="k">Mobile</span><span class="v">0912-345-678</span>
+              <span class="k">Tel</span><span class="v">+886 2 2xxx xxxx</span>
+              <span class="k">Email</span><span class="v">stacychen@idomain.com.tw</span>
+              <span class="k">Web</span><span class="v">idomain.com.tw</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bc bc-back">
+          <img class="mark" src="assets/logo-mark-white.svg" alt="mark" />
+          <div class="en">I&nbsp;&nbsp;DOMAIN&nbsp;&nbsp;INDUSTRIAL</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="group">
+      <div class="label">信紙 · Letterhead — A4</div>
+      <div class="pair">
+        <div class="letter">
+          <div class="lh-head">
+            <img class="logo" src="assets/logo-horizontal.svg" alt="壹東實業" />
+            <div class="corp">壹東實業有限公司<br />I Domain Industrial Co.<br />idomain.com.tw</div>
+          </div>
+          <div class="lh-body">
+            <div class="lh-date">2026.06.04</div>
+            <div class="lh-title">複層三明治金屬板報價說明</div>
+            <p class="lh-p">敬啟者：</p>
+            <p class="lh-p">感謝貴公司對壹東實業金屬帷幕牆系統之詢問。本公司專營複層三明治金屬板之設計、製造與施工，配合建築物造型生產各式精密尺寸之金屬外牆，並具備全自動化烤漆線。</p>
+            <div class="lh-line"></div>
+            <div class="lh-line"></div>
+            <div class="lh-line s"></div>
+          </div>
+          <div class="lh-foot">
+            <span class="web">IDOMAIN.COM.TW</span>
+            <div class="meta">壹東實業有限公司<br />設計 · 製造 · 施工</div>
+          </div>
+        </div>
+
+        <div class="spec">
+          <h3>排版規範</h3>
+          <p>名片與信紙皆遵循識別手冊第 5 頁之文件排版建議，標準字與標誌間距固定。</p>
+          <dl>
+            <dt>標題</dt><dd>Noto Serif TC Semibold · 15pt</dd>
+            <dt>內文</dt><dd>Noto Sans TC Regular · 9pt</dd>
+            <dt>主色</dt><dd>#1d3eb1 數位標準藍</dd>
+            <dt>輔色</dt><dd>#d68549 銅色強調</dd>
+            <dt>標誌</dt><dd>橫式組合 · 左上定位</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

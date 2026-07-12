@@ -1,0 +1,3 @@
+/* Stationery UI Kit — tokens.
+   Re-exports the single source of truth at /tokens so the kit never drifts. */
+@import url('../../tokens/colors_and_type.css');
